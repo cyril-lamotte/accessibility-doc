@@ -1,14 +1,15 @@
 
 .hint {
   display: none;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 20px 0;
   background: lightyellow;
   padding: 5px 30px;
   border-radius: 10px;
 
-  .show-hints & {
-    display: block;
+  ul {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -23,4 +24,20 @@ code {
   padding: 10px 10px 10px 20px;
   background: #ffe2ad;
   border-radius: 0 10px 10px 0;
+}
+
+.c11-1 {
+
+  label {
+    outline: 2px dashed orange;
+    outline-offset: 4px;
+  }
+}
+
+.c11-5 {
+
+  [role="group"] {
+    outline: 2px dashed orange;
+    outline-offset: 4px;
+  }
 }

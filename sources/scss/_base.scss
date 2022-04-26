@@ -1,13 +1,50 @@
 
+// Apply a natural box layout model to all elements (Only IE8+).
+html {
+  box-sizing: border-box;
+}
+
+// All elements have an inherited box-sizing to let the possibility of overriding.
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 html, body {
   font-size: 20px;
-  height: 100%;
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 0;
   background-color: #fff;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 h1 {
+  margin: 0 0 1rem;
   line-height: 1.2;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+  margin: 2rem auto;
+  max-width: calc(100% - 2rem);
+}
+
+.footer {
+  grid-column: 1/3;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-visible {
+  display: block !important;
 }

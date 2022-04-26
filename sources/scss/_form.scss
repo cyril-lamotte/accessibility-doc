@@ -1,6 +1,15 @@
 
-form {
-  max-width: 600px;
+.field {
+  margin-bottom: 1rem;
+}
+
+.label,
+label {
+  font-size: 1em;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: all 150ms;
 }
 
 input[type="text"],
@@ -8,19 +17,25 @@ input[type="email"],
 input[type="password"] {
   display: block;
   width: 100%;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0;
   padding: 0.5rem;
   font-size: 1rem;
   border: 0;
-  border-radius: 0.125rem 0.25rem;
-  background-color: hsl(222, 20%, 95%);
+  border-radius: 0.25rem;
+  background-color: hsl(222, 20%, 90%);
 }
 
+input[type="radio"],
 input[type="checkbox"] {
   margin-right: 0.5rem;
+
+  + label {
+    display: inline;
+    margin-bottom: 0;
+  }
 }
 
-button {
+button[type="submit"] {
   cursor: pointer;
   display: block;
   font-size: 1em;
@@ -34,4 +49,12 @@ button {
 .required-mentions {
   text-align: right;
   font-style: italic;
+}
+
+.radio-list-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: flex-start;
+  gap: 1rem
 }

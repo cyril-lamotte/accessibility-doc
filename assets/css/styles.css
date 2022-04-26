@@ -104,37 +104,96 @@
 :where(summary) {
   display: list-item
 }
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit
+}
 body,
 html {
   font-size: 20px;
-  height: 100%;
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 0;
   background-color: #fff;
-  font-family: Roboto,sans-serif
+  font-family: Roboto,Arial,sans-serif
 }
 h1 {
+  margin: 0 0 1rem;
   line-height: 1.2
 }
-form {
-  max-width: 600px
+h2 {
+  margin: 0 0 1rem;
+  line-height: 1.2
+}
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+  margin: 2rem auto;
+  max-width: calc(100% - 2rem)
+}
+.footer {
+  grid-column: 1/3
+}
+.is-hidden {
+  display: none!important
+}
+.is-visible {
+  display: block!important
+}
+.criteria-list {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+.criteria-list li {
+  margin-bottom: 1rem
+}
+.ref-list {
+  font-size: .8rem
+}
+.ref-link {
+  font-size: .8rem
+}
+.field {
+  margin-bottom: 1rem
+}
+.label,
+label {
+  font-size: 1em;
+  font-weight: 400;
+  display: block;
+  margin-bottom: .5rem;
+  -webkit-transition: all 150ms;
+  transition: all 150ms
 }
 input[type=email],
 input[type=password],
 input[type=text] {
   display: block;
   width: 100%;
-  margin: .5rem 0 1rem 0;
+  margin: 0;
   padding: .5rem;
   font-size: 1rem;
   border: 0;
-  border-radius: .125rem .25rem;
-  background-color: hsl(222deg,20%,95%)
+  border-radius: .25rem;
+  background-color: hsl(222deg,20%,90%)
 }
-input[type=checkbox] {
+input[type=checkbox],
+input[type=radio] {
   margin-right: .5rem
 }
-button {
+input[type=checkbox] + label,
+input[type=radio] + label {
+  display: inline;
+  margin-bottom: 0
+}
+button[type=submit] {
   cursor: pointer;
   display: block;
   font-size: 1em;
@@ -148,16 +207,32 @@ button {
   text-align: right;
   font-style: italic
 }
+.radio-list-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  gap: 1rem
+}
 .hint {
   display: none;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 20px 0;
   background: #ffffe0;
   padding: 5px 30px;
   border-radius: 10px
 }
-.show-hints .hint {
-  display: block
+.hint ul {
+  margin: 0;
+  padding: 0
 }
 code {
   background: orange;
@@ -169,5 +244,13 @@ code {
   padding: 10px 10px 10px 20px;
   background: #ffe2ad;
   border-radius: 0 10px 10px 0
+}
+.c11-1 label {
+  outline: 2px dashed orange;
+  outline-offset: 4px
+}
+.c11-5 [role=group] {
+  outline: 2px dashed orange;
+  outline-offset: 4px
 }
 /*# sourceMappingURL=../maps/styles.css.map */
