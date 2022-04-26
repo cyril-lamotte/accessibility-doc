@@ -1,0 +1,2 @@
+document.querySelectorAll(".controls button").forEach((function(t){var e=t.getAttribute("id");t.addEventListener("click",(function(){document.body.classList.toggle(e)}))})),document.getElementById("toggle-hints").addEventListener("click",(function(){document.body.classList.toggle("show-hints")}));
+//# sourceMappingURL=main-bundle.js.map

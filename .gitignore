@@ -1,0 +1,7 @@
+node_modules/
+dist
+.vscode
+*.orig
+*.map
+package-lock.json
+.DS_Store

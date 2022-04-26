@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <title>Formulaire - Champs requis mentionnés avec une astérisque</title>
+
+  <meta charset="utf-8">
+
+  <!-- Responsive markup -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Do not allow phone numbers to be detected -->
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+  <form method="get" action="#">
+
+    <h1>Champs requis mentionnés avec une astérisque</h1>
+
+    
+    <button type="button" id="toggle-hints"><span>Afficher / masquer les aides</span></button>
+
+
+    <p class="required-mentions">* Champ requis</p>
+
+    <div class="hint">
+      <p class="hint-note">Le caractère <code>*</code> n'est pas suffisant. Un texte précédent sa première utilisation doit être présent.</p>
+    </div>
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" required>
+
+    <div class="hint" data-a11y-subjects="label mandatory input">
+      <p>Un champ obligatoire <strong>doit</strong> disposer d'une indication visible et d'une indication technique qui indique sont caractère obligatoire.</p>
+      <p>Le champ dispose de l'attribut <code>required</code>.</p>
+      <p>La mention est visible dans le label associé.</p>
+      <p class="hint-note">Le caractère <code>*</code> n'est pas suffisant. Un texte précédent sa première utilisation doit être présent.</p>
+    </div>
+
+    <label for="password">Password *</label>
+    <input type="password" id="password" required>
+
+    <button type="submit">Valider</button>
+
+  </form>
+
+  
+    <!-- Scripts at the bottom for better performances -->
+    <script src="js/main-bundle.js"></script>
+
+
+</body>
+</html>

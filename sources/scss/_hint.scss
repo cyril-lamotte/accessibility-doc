@@ -1,0 +1,26 @@
+
+.hint {
+  display: none;
+  font-size: 16px;
+  margin: 20px 0;
+  background: lightyellow;
+  padding: 5px 30px;
+  border-radius: 10px;
+
+  .show-hints & {
+    display: block;
+  }
+}
+
+code {
+  background: orange;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.hint-note {
+  border-left: 5px solid orange;
+  padding: 10px 10px 10px 20px;
+  background: #ffe2ad;
+  border-radius: 0 10px 10px 0;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <!-- @@include('includes/head.html', {"title": "Formulaire accessible RGAA"}) -->
+
+</head>
+
+<body>
+
+  <form method="get" action="#">
+
+    <h1>Formulaire accessible RGAA</h1>
+    <p>Ci-dessous un exemple basique de formulaire implémentant les recommandations d'accessibiblité du RGAA (noter que d'autres implémentations sont possibles).</p>
+
+    <fieldset>
+      <legend>Variantes</legend>
+      <div class="controls">
+        <a href="form-required-star.html">Champs requis mentionnés avec <code>*</code></a>
+      </div>
+    </fieldset>
+
+    <div>
+      <label for="name">Nom</label>
+      <input type="text" id="name" autocomplete="family-name">
+    </div>
+
+    <div class="hint" data-a11y-subjects="label">
+      <p class="rule">Chaque champ <strong>doit</strong> avoir une étiquette. (<a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-1" target="_blank" title="Critère 11.1 (nouvelle fenêtre)">11.1</a>)</p>
+
+      <p><code>&lt;label for="field_id"&gt;Nom&lt;/label&gt;</code></p>
+
+    </div>
+
+    <div class="hint" data-a11y-subjects="input">
+      <p>Les champs <strong>doivent</strong> possèder un attribut <code>autocomplete</code> avec une valeur pertinente parmis <a href="https://www.w3.org/TR/WCAG21/#input-purposes" target="_blank" title="la liste des valeurs possibles pour l'attribut autocomplete (nouvelle fenêtre)">la liste des valeurs possibles pour l'attribut autocomplete</a>.
+      <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-13" target="_blank" title="Critère 11.13 (nouvelle fenêtre)">(11.13)</a></p>
+      <p>Ici, <code>autocomplete="family-name"</code></p>
+
+    </div>
+
+    <label for="name">Prénom</label>
+    <input type="text" id="firstname" autocomplete="given-name">
+
+    <label for="email">Email (requis)</label>
+    <input type="email" id="email" required>
+
+    <div class="hint" data-a11y-subjects="label mandatory input">
+      <p>Un champ obligatoire <strong>doit</strong> disposer d'une indication visible et d'une indication technique qui indique sont caractère obligatoire.</p>
+      <p>Le champ dispose de l'attribut <code>required</code>.</p>
+      <p>La mention est visible dans le label associé.</p>
+      <p class="hint-note">Le caractère <code>*</code> n'est pas suffisant. Un texte précédent sa première utilisation doit être présent.</p>
+    </div>
+
+    <label for="password">Password (requis)</label>
+    <input type="password" id="password" required>
+
+    <div class="checkbox">
+      <input type="checkbox" id="check1">
+      <label for="check1">I accept the terms</label><br>
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox" id="check2">
+      <label for="check2">Pineapple on pizza is a crime</label><br>
+    </div>
+
+    <button type="submit">Créer mon compte</button>
+
+  </form>
+
+  <!-- @@include('includes/scripts.html') -->
+
+</body>
+</html>

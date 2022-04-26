@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <!-- @@include('includes/head.html', {"title": "Formulaire - Champs requis mentionnés avec une astérisque"}) -->
+
+</head>
+
+<body>
+
+  <form method="get" action="#">
+
+    <h1>Champs requis mentionnés avec une astérisque</h1>
+
+    <!-- @@include('includes/toggle-hints.html') -->
+
+    <p class="required-mentions">* Champ requis</p>
+
+    <div class="hint">
+      <p class="hint-note">Le caractère <code>*</code> n'est pas suffisant. Un texte précédent sa première utilisation doit être présent.</p>
+    </div>
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" required>
+
+    <div class="hint" data-a11y-subjects="label mandatory input">
+      <p>Un champ obligatoire <strong>doit</strong> disposer d'une indication visible et d'une indication technique qui indique sont caractère obligatoire.</p>
+      <p>Le champ dispose de l'attribut <code>required</code>.</p>
+      <p>La mention est visible dans le label associé.</p>
+      <p class="hint-note">Le caractère <code>*</code> n'est pas suffisant. Un texte précédent sa première utilisation doit être présent.</p>
+    </div>
+
+    <label for="password">Password *</label>
+    <input type="password" id="password" required>
+
+    <button type="submit">Valider</button>
+
+  </form>
+
+  <!-- @@include('includes/scripts.html') -->
+
+</body>
+</html>
