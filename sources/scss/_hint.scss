@@ -28,27 +28,48 @@ code {
 
 // Higlighting.
 
+@mixin outline {
+  outline: 2px dashed orange;
+  outline-offset: 4px;
+}
+
 .c11-1 {
 
   label {
-    outline: 2px dashed orange;
-    outline-offset: 4px;
+    @include outline;
   }
 }
 
 .c11-5 {
 
   [role="group"] {
-    outline: 2px dashed orange;
-    outline-offset: 4px;
+    @include outline;
   }
 }
-
 
 .c11-8 {
 
   select {
-    outline: 2px dashed orange;
-    outline-offset: 4px;
+    @include outline;
   }
 }
+
+.c11-9 {
+
+  button {
+    @include outline;
+  }
+}
+
+
+.c11-10 {
+
+  input[required] {
+    @include outline;
+  }
+
+  .error {
+    display: block;
+  }
+}
+

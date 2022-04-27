@@ -42,13 +42,23 @@ button[type="submit"] {
   font-size: 1em;
   padding: 0.5rem 1rem;
   border: 0;
-  border-radius: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
   background-color: hsl(218deg 92% 57%);
   color: #fff;
 }
 
-.offset {
-  padding-left: 2rem;
+.error {
+  display: none;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background: #f8dada;
+  color: red;
+  border-left: 5px solid red;
+  border-radius: 0 10px 10px 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 .required-mentions {
@@ -70,4 +80,9 @@ button[type="submit"] {
   align-items: center;
   align-content: flex-start;
   gap: 1rem
+}
+
+.inline-help {
+  margin: 0 0 0.5rem;
+  font-size: small;
 }

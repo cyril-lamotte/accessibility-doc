@@ -132,10 +132,24 @@ h2 {
 }
 .layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 3fr 4fr;
   grid-gap: 2rem;
-  margin: 2rem auto;
-  max-width: calc(100% - 2rem)
+  margin: 0 auto
+}
+.sidebar {
+  position: relative
+}
+.sidebar__inner {
+  background: #f4f4f4;
+  position: fixed;
+  padding: 1rem;
+  width: 40%;
+  height: 100vh;
+  overflow: auto;
+  resize: horizontal
+}
+.main {
+  padding: 1rem 0
 }
 .panel {
   border-radius: 10px;
@@ -148,19 +162,14 @@ h2 {
 .is-visible {
   display: block!important
 }
-.criteria-list {
-  list-style: none;
-  padding: 0;
-  margin: 0
-}
-.criteria-list li {
-  margin-bottom: 1rem
+.criteria-group {
+  margin-bottom: .5rem
 }
 .ref-list {
-  font-size: .8rem
+  font-size: small
 }
 .ref-link {
-  font-size: .8rem
+  font-size: small
 }
 .field {
   margin-bottom: 1rem
@@ -202,12 +211,21 @@ button[type=submit] {
   font-size: 1em;
   padding: .5rem 1rem;
   border: 0;
-  border-radius: .125rem .25rem;
+  border-radius: .25rem;
   background-color: hsl(218deg,92%,57%);
   color: #fff
 }
-.offset {
-  padding-left: 2rem
+.error {
+  display: none;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background: #f8dada;
+  color: red;
+  border-left: 5px solid red;
+  border-radius: 0 10px 10px 0
+}
+.error p {
+  margin: 0
 }
 .required-mentions {
   text-align: right;
@@ -243,6 +261,10 @@ button[type=submit] {
   align-content: flex-start;
   gap: 1rem
 }
+.inline-help {
+  margin: 0 0 .5rem;
+  font-size: small
+}
 .hint {
   display: none;
   font-size: 1rem;
@@ -277,5 +299,16 @@ code {
 .c11-8 select {
   outline: 2px dashed orange;
   outline-offset: 4px
+}
+.c11-9 button {
+  outline: 2px dashed orange;
+  outline-offset: 4px
+}
+.c11-10 input[required] {
+  outline: 2px dashed orange;
+  outline-offset: 4px
+}
+.c11-10 .error {
+  display: block
 }
 /*# sourceMappingURL=../maps/styles.css.map */

@@ -31,10 +31,27 @@ h2 {
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 3fr 4fr;
   grid-gap: 2rem;
-  margin: 2rem auto;
-  max-width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
+.sidebar {
+  position: relative;
+}
+
+.sidebar__inner {
+  background: #f4f4f4;
+  position: fixed;
+  padding: 1rem;
+  width: 40%;
+  height: 100vh;
+  overflow: auto;
+  resize: horizontal;
+}
+
+.main {
+  padding: 1rem 0;
 }
 
 .panel {

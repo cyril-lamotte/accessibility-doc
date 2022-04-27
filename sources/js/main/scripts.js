@@ -24,3 +24,21 @@ checkboxList.forEach((cb) => {
     });
   });
 });
+
+
+// Targeting email fields and text fields with "email" name.
+const emailFieldList = document.querySelectorAll('[type="email"], [type="text"][name="email"]');
+emailFieldList.forEach((field) => {
+  field.addEventListener('input', (e) => {
+    field.setCustomValidity('');
+    field.checkValidity();
+  });
+
+  field.addEventListener('invalid', (e) => {
+    if (field.value === '') {
+      field.setCustomValidity('L\'email est requis.');
+    } else {
+      field.setCustomValidity('L\'email est incorrect, le caractère \'@\' est manquant, ex : jean.dupond@exemple.com');
+    }
+  });
+});

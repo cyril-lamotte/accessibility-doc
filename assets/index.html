@@ -22,64 +22,150 @@
   <div class="layout">
 
     <div class="sidebar">
+      <div class="sidebar__inner">
+        <h2>Critères</h2>
 
-      <h2>Critères</h2>
+        
+        <div class="criteria-group">
 
-      <div class="criteria-radio">
-        <input type="radio" name="crit" id="c11-1">
-        <label for="c11-1">11.1-4 Étiquettes</label>
+          <div class="criteria-radio">
+            <input type="radio" name="crit" id="c11-1">
+            <label for="c11-1">Étiquettes</label>
+          </div>
+
+          <div class="hint" data-a11y-ref="c11-1">
+            <ul>
+              <li>Chaque champ doit posséder une étiquette (ex&nbsp;: <code>label</code>).</li>
+              <li>Chaque <code>label</code> doit être associé à son champ via les attributs <code>for</code> et <code>id</code>.</li>
+              <li>Chaque étiquette doit être <strong>pertinente</strong> et <strong>cohérente</strong> dans l'ensemble du site.</li>
+              <li>L'étiquette doit être accolée au champ associé.</li>
+            </ul>
+
+            <div class="ref-list">
+              Référence&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-1" class="ref-link">11.1-4</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="criteria-group">
+
+          <div class="criteria-radio">
+            <input type="radio" name="crit" id="c11-5">
+            <label for="c11-5">Groupes</label>
+          </div>
+
+          <div class="hint" data-a11y-ref="c11-5">
+
+            <ul>
+              <li>Les <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/glossaire/#champs-de-meme-nature">champs de même nature</a>
+              doivent être regroupés dans un <code>fieldset</code> ou un <code>role="group"</code>.</li>
+              <li>Chaque groupe doit avoir une légende (ex&nbsp;: <code>legend</code> ou un titre<code>hx</code> avec un <code>id</code> relié avec <code>aria-labelledby</code></li>
+              <li>Chaque légende doit être pertinente.</li>
+            </ul>
+
+            <div class="ref-list">
+              Référence&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-5" class="ref-link">11.5-7</a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="criteria-group">
+
+          <div class="criteria-radio">
+            <input type="radio" name="crit" id="c11-8">
+            <label for="c11-8">Listes</label>
+          </div>
+
+          <div class="hint" data-a11y-ref="c11-8">
+
+            <ul>
+              <li>Les <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/glossaire/#items-de-meme-nature-d-une-liste-de-choix">items de même nature</a>
+              doivent être regroupés dans un <code>optgroup label="Nom du groupe"</code>.</li>
+            </ul>
+
+            <div class="ref-list">
+              Référence&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-8" class="ref-link">11.8</a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="criteria-group">
+
+          <div class="criteria-radio">
+            <input type="radio" name="crit" id="c11-9">
+            <label for="c11-9">Boutons</label>
+          </div>
+
+          <div class="hint" data-a11y-ref="c11-9">
+
+            <ul>
+              <li>Chaque bouton doit avoir un intitulé <strong>pertinent</strong>.</li>
+            </ul>
+
+            <div class="ref-list">
+              Référence&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-9" class="ref-link">11.9</a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="criteria-group">
+
+          <div class="criteria-radio">
+            <input type="radio" name="crit" id="c11-10">
+            <label for="c11-10">Contrôles de saisie</label>
+          </div>
+
+          <div class="hint" data-a11y-ref="c11-10">
+            <h3>Champs obligatoires</h3>
+            <p>Un champ obligatoire <strong>doit</strong> disposer d'une indication visible et d'une indication technique qui indique sont caractère obligatoire.</p>
+            <p>Le champ doit disposer de l'attribut <code>required</code>.</p>
+            <p>La mention est <strong>visible</strong> dans l'étiquette associé.</p>
+            <p class="hint-note">Le caractère <code>*</code> n'est pas suffisant. Un texte précédent la première utilisation du symbole doit être présent.</p>
+
+            <h3>Formats ou types obligatoires</h3>
+            <ul>
+              <li>Si un format ou un type de donnée est requis, les instructions doivent être <strong>visible</strong>.</li>
+              <li>Le champ doit être relié aux instructions avec <code>describedby="ID-MESSAGE"</code></li>
+            </ul>
+
+            <h3>Messages d'erreur</h3>
+            <ul>
+              <li>Les messages d'erreur doivent nommer le champ concerné.</li>
+              <li>Les types et formats de données doivent être suggérés si nécessaire, et un exemple doit être donné.</li>
+              <li>Les messages HTML5 doivent êtres personnalisés via l'API Constraint Validation.</li>
+            </ul>
+
+            <div class="ref-list">
+              Référence&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-10" class="ref-link">11.10</a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+        <div class="hint" data-a11y-subjects="input">
+          <p>Les champs <strong>doivent</strong> possèder un attribut <code>autocomplete</code> avec une valeur pertinente parmis <a href="https://www.w3.org/TR/WCAG21/#input-purposes" target="_blank" title="la liste des valeurs possibles pour l'attribut autocomplete (nouvelle fenêtre)">la liste des valeurs possibles pour l'attribut autocomplete</a>.
+          <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-13" target="_blank" title="Critère 11.13 (nouvelle fenêtre)">(11.13)</a></p>
+          <p>Ici, <code>autocomplete="family-name"</code></p>
+        </div>
+
+
       </div>
-
-      <div class="ref-list">
-        Référence&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-1" class="ref-link">11.1-4</a>
-      </div>
-
-      <div class="hint" data-a11y-ref="c11-1">
-        <ul>
-          <li>Chaque champ doit posséder une étiquette (ex&nbsp;: <code>label</code>).</li>
-          <li>Chaque <code>label</code> doit être associé à son champ via les attributs <code>for</code> et <code>id</code>.</li>
-          <li>Chaque étiquette doit être <strong>pertinente</strong> et <strong>cohérente</strong> dans l'ensemble du site.</li>
-          <li>L'étiquette doit être accolée au champ associé.</li>
-        </ul>
-      </div>
-
-      <div class="criteria-radio">
-        <input type="radio" name="crit" id="c11-5">
-        <label for="c11-5">11.5-7 Groupes</label>
-      </div>
-
-      <div class="ref-list">
-        Référence&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-5" class="ref-link">11.5-7</a>
-      </div>
-
-      <div class="hint" data-a11y-ref="c11-5">
-
-        <ul>
-          <li>Les <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/glossaire/#champs-de-meme-nature">champs de même nature</a>
-          doivent être regroupés dans un <code>fieldset</code> ou un <code>role="group"</code>.</li>
-          <li>Chaque groupe doit avoir une légende (ex&nbsp;: <code>legend</code> ou un titre<code>hx</code> avec un <code>id</code> relié avec <code>aria-labelledby</code></li>
-          <li>Chaque légende doit être pertinente.</li>
-        </ul>
-      </div>
-
-
-      <div class="criteria-radio">
-        <input type="radio" name="crit" id="c11-8">
-        <label for="c11-8">11.8 Listes</label>
-      </div>
-
-      <div class="ref-list">
-        Référence&nbsp;: <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-8" class="ref-link">11.8</a>
-      </div>
-
-      <div class="hint" data-a11y-ref="c11-8">
-
-        <ul>
-          <li>Les <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/glossaire/#items-de-meme-nature-d-une-liste-de-choix">items de même nature</a>
-          doivent être regroupés dans un <code>optgroup label="Nom du groupe"</code>.</li>
-        </ul>
-      </div>
-
     </div>
 
     <main class="main" role="main">
@@ -91,14 +177,13 @@
 
         <div class="field">
           <label for="email">Email (requis)</label>
-          <input type="email" id="email" required>
+          <p class="inline-help" id="mail-help">Exemple&nbsp;: nom@site.com</p>
+          <input type="email" id="email" describedby="mail-help" autocomplete="email" required>
         </div>
 
-        <div class="hint" data-a11y-ref="c">
-          <p>Un champ obligatoire <strong>doit</strong> disposer d'une indication visible et d'une indication technique qui indique sont caractère obligatoire.</p>
-          <p>Le champ dispose de l'attribut <code>required</code>.</p>
-          <p>La mention est visible dans le label associé.</p>
-          <p class="hint-note">Le caractère <code>*</code> n'est pas suffisant. Un texte précédent sa première utilisation doit être présent.</p>
+        <div class="error">
+          <p>L'email est requis.</p>
+          <p>L'email est incorrect, le caractère '@' est manquant, ex&nbsp;: jean.dupond@exemple.com</p>
         </div>
 
         <div class="field">
@@ -109,19 +194,6 @@
         <div class="field">
           <label for="name">Nom</label>
           <input type="text" id="name" autocomplete="family-name">
-        </div>
-
-        <div class="hint" data-a11y-subjects="label">
-          <p class="rule">Chaque champ <strong>doit</strong> avoir une étiquette. (<a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-1" target="_blank" title="Critère 11.1 (nouvelle fenêtre)">11.1</a>)</p>
-
-          <p><code>&lt;label for="field_id"&gt;Nom&lt;/label&gt;</code></p>
-
-        </div>
-
-        <div class="hint" data-a11y-subjects="input">
-          <p>Les champs <strong>doivent</strong> possèder un attribut <code>autocomplete</code> avec une valeur pertinente parmis <a href="https://www.w3.org/TR/WCAG21/#input-purposes" target="_blank" title="la liste des valeurs possibles pour l'attribut autocomplete (nouvelle fenêtre)">la liste des valeurs possibles pour l'attribut autocomplete</a>.
-          <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/#crit-11-13" target="_blank" title="Critère 11.13 (nouvelle fenêtre)">(11.13)</a></p>
-          <p>Ici, <code>autocomplete="family-name"</code></p>
         </div>
 
         <div class="field">
@@ -146,7 +218,7 @@
         <div class="field" role="group" aria-labelledby="address-title">
           <h2 class="label" id="address-title">Adresse</h2>
 
-          <div class="offset panel">
+          <div class="panel">
 
             <div class="inline-fields">
 
@@ -204,7 +276,9 @@
           </div>
         </div>
 
-        <button type="submit">Créer mon compte</button>
+        <div class="actions">
+          <button type="submit">Créer mon compte</button>
+        </div>
 
       </form>
 
