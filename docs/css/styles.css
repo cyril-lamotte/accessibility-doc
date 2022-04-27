@@ -138,25 +138,33 @@ h3 {
   line-height: 1.2
 }
 .layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  margin: 0 auto
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
 }
 .sidebar {
-  position: relative
-}
-.sidebar__inner {
+  position: relative;
   background: #f4f4f4;
-  position: fixed;
   padding: 1rem;
-  width: 50%;
   height: 100vh;
   overflow: auto;
-  resize: horizontal
+  resize: horizontal;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 50%
 }
 .main {
-  padding: 1rem 2rem
+  padding: 1rem 2rem;
+  height: 100vh;
+  overflow: auto
 }
 .panel {
   border-radius: 10px;
