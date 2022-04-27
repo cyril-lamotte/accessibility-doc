@@ -22,27 +22,27 @@
   },
   "buildPaths": {
     "src": "./sources/",
-    "dist": "./assets/",
+    "dist": "./docs/",
     "styles": {
       "i": "./sources/scss/",
-      "o": "assets/css/"
+      "o": "docs/css/"
     },
     "html": {
       "i": "./sources/html/",
-      "o": "./assets/"
+      "o": "./docs/"
     },
     "scripts": {
       "i": "./sources/js/",
-      "o": "./assets/js/"
+      "o": "./docs/js/"
     },
     "images": {
       "i": "./sources/img/",
-      "o": "./assets/img/",
+      "o": "./docs/img/",
       "spritesSVG": "./sources/img/icons/"
     },
     "fonts": {
       "i": "./sources/fonts/",
-      "o": "./assets/fonts/"
+      "o": "./docs/fonts/"
     },
     "data": {
       "i": "./sources/data/",
