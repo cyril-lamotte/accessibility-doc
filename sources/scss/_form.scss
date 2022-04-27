@@ -12,6 +12,7 @@ label {
   transition: all 150ms;
 }
 
+select,
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -46,9 +47,21 @@ button[type="submit"] {
   color: #fff;
 }
 
+.offset {
+  padding-left: 2rem;
+}
+
 .required-mentions {
   text-align: right;
   font-style: italic;
+}
+
+.inline-fields {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: flex-start;
+  gap: 1rem
 }
 
 .radio-list-inline {

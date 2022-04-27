@@ -26,6 +26,8 @@ code {
   border-radius: 0 10px 10px 0;
 }
 
+// Higlighting.
+
 .c11-1 {
 
   label {
@@ -37,6 +39,15 @@ code {
 .c11-5 {
 
   [role="group"] {
+    outline: 2px dashed orange;
+    outline-offset: 4px;
+  }
+}
+
+
+.c11-8 {
+
+  select {
     outline: 2px dashed orange;
     outline-offset: 4px;
   }
