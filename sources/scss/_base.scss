@@ -2,6 +2,15 @@
 // Apply a natural box layout model to all elements (Only IE8+).
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+// Consider using the CSS media feature: prefers-reduced-motion to toggle the 'smooth' option.
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 // All elements have an inherited box-sizing to let the possibility of overriding.

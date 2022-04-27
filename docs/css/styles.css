@@ -106,7 +106,13 @@
 }
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
+  scroll-behavior: smooth
+}
+@media (prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior: auto
+  }
 }
 *,
 :after,
@@ -309,31 +315,11 @@ code {
   background: #ffe2ad;
   border-radius: 0 10px 10px 0
 }
-.c11-1 label {
-  outline: 2px dashed orange;
-  outline-offset: 4px
-}
-.c11-5 [role=group] {
-  outline: 2px dashed orange;
-  outline-offset: 4px
-}
-.c11-8 select {
-  outline: 2px dashed orange;
-  outline-offset: 4px
-}
-.c11-9 button {
-  outline: 2px dashed orange;
-  outline-offset: 4px
-}
-.c11-10 input[required] {
+.outline {
   outline: 2px dashed orange;
   outline-offset: 4px
 }
 .c11-10 .error {
   display: block
-}
-.c11-13 input[autocomplete] {
-  outline: 2px dashed orange;
-  outline-offset: 4px
 }
 /*# sourceMappingURL=../maps/styles.css.map */

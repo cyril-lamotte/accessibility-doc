@@ -43,49 +43,13 @@ code {
   outline-offset: 4px;
 }
 
-.c11-1 {
-
-  label {
-    @include outline;
-  }
-}
-
-.c11-5 {
-
-  [role="group"] {
-    @include outline;
-  }
-}
-
-.c11-8 {
-
-  select {
-    @include outline;
-  }
-}
-
-.c11-9 {
-
-  button {
-    @include outline;
-  }
+.outline {
+  @include outline;
 }
 
 .c11-10 {
-
-  input[required] {
-    @include outline;
-  }
 
   .error {
     display: block;
   }
 }
-
-.c11-13 {
-
-  input[autocomplete] {
-    @include outline;
-  }
-}
-
