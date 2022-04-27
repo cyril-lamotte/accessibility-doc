@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 
-  <!-- @@include('includes/head.html', {"title": "Formulaire accessible RGAA"}) -->
+  <!-- @@include('includes/head.html', {"title": "Formulaire RGAA"}) -->
 
 </head>
 
@@ -15,6 +15,7 @@
         <h2>Critères</h2>
 
         <!-- @@include('includes/hint-form.html') -->
+
       </div>
     </div>
 
@@ -22,7 +23,7 @@
 
       <form method="get" action="#">
 
-        <h1>Formulaire accessible RGAA 4.1</h1>
+        <h1>Formulaire RGAA</h1>
         <p>Voici un exemple de formulaire implémentant les recommandations d'accessibiblité <small>(d'autres implémentations sont possibles)</small>.</p>
 
         <div class="field">
@@ -38,7 +39,7 @@
 
         <div class="field">
           <label for="password">Mot de passe (requis)</label>
-          <input type="password" id="password" required>
+          <input type="password" id="password" autocomplete="new-password" required>
         </div>
 
         <div class="field">
@@ -73,13 +74,8 @@
             <div class="inline-fields">
 
               <div class="field">
-                <label for="addr-num">Numéro</label>
-                <input type="text" id="addr-num">
-              </div>
-
-              <div class="field">
-                <label for="addr-street">Rue</label>
-                <input type="text" id="addr-street">
+                <label for="addr-street">Numéro et rue</label>
+                <input type="text" id="addr-street" autocomplete="street-address">
               </div>
 
             </div>
@@ -88,12 +84,12 @@
 
               <div class="field">
                 <label for="addr-cp">Code postal</label>
-                <input type="text" id="addr-cp">
+                <input type="text" id="addr-cp" autocomplete="postal-code">
               </div>
 
               <div class="field">
                 <label for="addr-city">Ville</label>
-                <input type="text" id="addr-city">
+                <input type="text" id="addr-city" autocomplete="address_level2">
               </div>
 
             </div>

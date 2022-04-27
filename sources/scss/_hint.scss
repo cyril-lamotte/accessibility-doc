@@ -4,12 +4,22 @@
   font-size: 1rem;
   margin: 20px 0;
   background: lightyellow;
-  padding: 5px 30px;
+  padding: 1rem 2rem;
   border-radius: 10px;
 
   ul {
-    margin: 0;
+    margin: 1rem 0;
     padding: 0;
+  }
+
+  * {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -61,7 +71,6 @@ code {
   }
 }
 
-
 .c11-10 {
 
   input[required] {
@@ -70,6 +79,13 @@ code {
 
   .error {
     display: block;
+  }
+}
+
+.c11-13 {
+
+  input[autocomplete] {
+    @include outline;
   }
 }
 

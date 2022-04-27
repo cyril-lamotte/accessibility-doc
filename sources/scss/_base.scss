@@ -20,18 +20,26 @@ html, body {
 }
 
 h1 {
+  font-size: 2rem;
   margin: 0 0 1rem;
   line-height: 1.2;
 }
 
 h2 {
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.2rem;
   margin: 0 0 1rem;
   line-height: 1.2;
 }
 
 .layout {
   display: grid;
-  grid-template-columns: 3fr 4fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   margin: 0 auto;
 }
@@ -44,14 +52,14 @@ h2 {
   background: #f4f4f4;
   position: fixed;
   padding: 1rem;
-  width: 40%;
+  width: 50%;
   height: 100vh;
   overflow: auto;
   resize: horizontal;
 }
 
 .main {
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 
 .panel {
