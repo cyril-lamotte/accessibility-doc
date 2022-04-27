@@ -3,9 +3,9 @@
   display: none;
   font-size: 1rem;
   margin: 20px 0;
-  background: lightyellow;
+  background: var(--bg-lighter);
   padding: 1rem 2rem;
-  border-radius: 10px;
+  border-radius: var(--radius);
 
   ul {
     margin: 1rem 0;
@@ -24,22 +24,23 @@
 }
 
 code {
-  background: orange;
+  background-color: var(--bgcolor);
+  color: #fff;
   padding: 2px 5px;
   border-radius: 3px;
 }
 
 .hint-note {
-  border-left: 5px solid orange;
+  border-left: 5px solid var(--hl);
   padding: 10px 10px 10px 20px;
-  background: #ffe2ad;
+  background: var(--bgcolor);
   border-radius: 0 10px 10px 0;
 }
 
 // Higlighting.
 
 @mixin outline {
-  outline: 2px dashed orange;
+  outline: 2px dashed var(--hl);
   outline-offset: 4px;
 }
 
@@ -47,9 +48,3 @@ code {
   @include outline;
 }
 
-.c11-10 {
-
-  .error {
-    display: block;
-  }
-}

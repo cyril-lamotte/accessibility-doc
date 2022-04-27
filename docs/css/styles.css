@@ -120,28 +120,64 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
+:root {
+  --bgcolor: #1f2933;
+  --bg-lighter: rgba(255, 255, 255, 0.1);
+  --base-color: #fff;
+  --radius: 20px;
+  --hl: #90b9ff;
+  --error: #5f3127
+}
 body,
 html {
   font-size: 20px;
   line-height: 1.6;
   margin: 0;
-  background-color: #fff;
+  background-color: var(--bgcolor);
+  color: var(--base-color);
   font-family: Roboto,Arial,sans-serif
 }
+:-webkit-any-link {
+  color: var(--hl);
+  text-decoration: underline
+}
+:-moz-any-link {
+  color: var(--hl);
+  text-decoration: underline
+}
+:any-link {
+  color: var(--hl);
+  text-decoration: underline
+}
+:-webkit-any-link:hover {
+  text-decoration: none
+}
+:-moz-any-link:hover {
+  text-decoration: none
+}
+:any-link:hover {
+  text-decoration: none
+}
 h1 {
+  color: var(--hl);
   font-size: 2rem;
   margin: 0 0 1rem;
-  line-height: 1.2
+  line-height: 1.2;
+  font-weight: 400
 }
 h2 {
+  color: var(--hl);
   font-size: 1.6rem;
   margin: 0 0 1rem;
-  line-height: 1.2
+  line-height: 1.2;
+  font-weight: 400
 }
 h3 {
+  color: var(--hl);
   font-size: 1.2rem;
   margin: 0 0 1rem;
-  line-height: 1.2
+  line-height: 1.2;
+  font-weight: 400
 }
 .layout {
   display: -webkit-box;
@@ -157,7 +193,8 @@ h3 {
 }
 .sidebar {
   position: relative;
-  background: #f4f4f4;
+  background: var(--bg-lighter);
+  background-color: var(--bgcolor);
   padding: 1rem;
   height: 100vh;
   overflow: auto;
@@ -173,9 +210,9 @@ h3 {
   overflow: auto
 }
 .panel {
-  border-radius: 10px;
-  padding: 2rem;
-  background: #f4f4f4
+  border-radius: var(--radius);
+  background-color: var(--bg-lighter);
+  padding: 2rem
 }
 .is-hidden {
   display: none!important
@@ -211,11 +248,12 @@ select {
   display: block;
   width: 100%;
   margin: 0;
-  padding: .5rem;
+  padding: 1rem;
   font-size: 1rem;
   border: 0;
-  border-radius: .25rem;
-  background-color: hsl(222deg,20%,90%)
+  border-radius: var(--radius);
+  background-color: var(--bg-lighter);
+  color: inherit
 }
 input[type=checkbox],
 input[type=radio] {
@@ -241,12 +279,15 @@ button[type=submit] {
   margin-bottom: 2rem;
   padding: 1rem 2rem;
   background: #f8dada;
-  color: red;
-  border-left: 5px solid red;
-  border-radius: 0 10px 10px 0
+  color: var(--error);
+  border-left: 5px solid var(--error);
+  border-radius: 0 var(--radius) var(--radius) 0
 }
 .error p {
   margin: 0
+}
+.c11-10 .error {
+  display: block
 }
 .required-mentions {
   text-align: right;
@@ -290,9 +331,9 @@ button[type=submit] {
   display: none;
   font-size: 1rem;
   margin: 20px 0;
-  background: #ffffe0;
+  background: var(--bg-lighter);
   padding: 1rem 2rem;
-  border-radius: 10px
+  border-radius: var(--radius)
 }
 .hint ul {
   margin: 1rem 0;
@@ -305,21 +346,19 @@ button[type=submit] {
   margin-bottom: 0
 }
 code {
-  background: orange;
+  background-color: var(--bgcolor);
+  color: #fff;
   padding: 2px 5px;
   border-radius: 3px
 }
 .hint-note {
-  border-left: 5px solid orange;
+  border-left: 5px solid var(--hl);
   padding: 10px 10px 10px 20px;
-  background: #ffe2ad;
+  background: var(--bgcolor);
   border-radius: 0 10px 10px 0
 }
 .outline {
-  outline: 2px dashed orange;
+  outline: 2px dashed var(--hl);
   outline-offset: 4px
-}
-.c11-10 .error {
-  display: block
 }
 /*# sourceMappingURL=../maps/styles.css.map */
