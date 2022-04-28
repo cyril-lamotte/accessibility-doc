@@ -28,10 +28,10 @@
         <div class="field">
           <label for="email">Email (requis)</label>
           <p class="inline-help" id="mail-help">Exemple&nbsp;: nom@site.com</p>
-          <input type="email" id="email" describedby="mail-help" autocomplete="email" required>
+          <input type="email" id="email" aria-describedby="mail-help mail-error" autocomplete="email" required>
         </div>
 
-        <div class="error">
+        <div class="error" id="mail-error">
           <p>L'email est requis.</p>
           <p>L'email est incorrect, le caractère '@' est manquant, ex&nbsp;: jean.dupond@exemple.com</p>
         </div>
@@ -117,7 +117,7 @@
         <div class="field">
           <div class="checkbox">
             <input type="checkbox" id="accept">
-            <label for="accept">I accept the terms</label>
+            <label for="accept">J'accepte les conditions.</label>
           </div>
         </div>
 

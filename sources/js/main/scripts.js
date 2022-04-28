@@ -72,7 +72,6 @@ checkboxList.forEach((cb) => {
           }
         });
       }
-
     });
   });
 });
