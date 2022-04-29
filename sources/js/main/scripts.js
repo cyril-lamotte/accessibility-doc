@@ -89,7 +89,7 @@ emailFieldList.forEach((field) => {
     if (field.value === '') {
       field.setCustomValidity('L\'email est requis.');
     } else {
-      field.setCustomValidity('L\'email est incorrect, le caractère \'@\' est manquant, ex : jean.dupond@exemple.com');
+      field.setCustomValidity('L\'email est incorrect, le caractère \'@\' est manquant, exemple : vous@site.com');
     }
   });
 });
