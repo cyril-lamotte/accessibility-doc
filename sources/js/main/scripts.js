@@ -1,14 +1,12 @@
 
 // Get all checkboxes.
-const checkboxList = document.querySelectorAll('.criteria-radio input[type="radio"]');
+const radioList = document.querySelectorAll('.criteria-radio input[type="radio"]');
 const form = document.querySelector('form');
 const hintList = document.querySelectorAll('.hint');
 
-checkboxList.forEach((cb) => {
-  // Get the id as reference.
-
-  cb.addEventListener('change', () => {
-    const id = cb.getAttribute('id');
+radioList.forEach((radio) => {
+  radio.addEventListener('change', () => {
+    const id = radio.getAttribute('id');
 
     // Hide all hints.
     hintList.forEach((hint) => {
