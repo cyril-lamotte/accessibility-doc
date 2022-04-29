@@ -130,7 +130,7 @@
           <h3>Champs obligatoires</h3>
           <p>Un champ obligatoire <strong>doit</strong> disposer d'une indication visible et d'une indication technique qui indique sont caractère obligatoire.</p>
           <p>Le champ doit disposer de l'attribut <code>required</code>.</p>
-          <p>La mention est <strong>visible</strong> dans l'étiquette associé.</p>
+          <p>La mention doit être <strong>visible</strong> dans l'étiquette associé.</p>
           <p class="hint-note">Le caractère <code>*</code> n'est pas suffisant. Un texte précédent la première utilisation du symbole doit être présent.</p>
 
           <h3>Formats ou types obligatoires</h3>
@@ -187,13 +187,13 @@
 
         <div class="field">
           <label for="email">Email (requis)</label>
-          <p class="inline-help" id="mail-help">Exemple&nbsp;: nom@site.com</p>
+          <p class="inline-help" id="mail-help">Format&nbsp;: vous@domaine.com exemple&nbsp;: : jean.dupond@site.com</p>
           <input type="email" id="email" aria-describedby="mail-help mail-error" autocomplete="email" required>
         </div>
 
         <div class="error" id="mail-error">
           <p>L'email est requis.</p>
-          <p>L'email est incorrect, le caractère '@' est manquant, ex&nbsp;: jean.dupond@exemple.com</p>
+          <p>L'email est incorrect, le caractère '@' est manquant, exemple&nbsp;: jean.dupond@site.com</p>
         </div>
 
         <div class="field">
