@@ -289,9 +289,12 @@ button[type=submit] {
 .c11-10 .error {
   display: block
 }
-.required-mentions {
+.required-mention {
   text-align: right;
   font-style: italic
+}
+.symbol-required {
+  color: var(--hl)
 }
 .inline-fields {
   display: -webkit-box;

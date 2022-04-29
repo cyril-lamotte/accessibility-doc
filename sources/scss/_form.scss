@@ -66,9 +66,13 @@ button[type="submit"] {
   }
 }
 
-.required-mentions {
+.required-mention {
   text-align: right;
   font-style: italic;
+}
+
+.symbol-required {
+  color: var(--hl);
 }
 
 .inline-fields {
