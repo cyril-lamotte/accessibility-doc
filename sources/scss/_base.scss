@@ -84,14 +84,15 @@ h3 {
   padding: 1rem;
   height: 100vh;
   overflow: auto;
-  flex: 1 1 auto;
-  width: 50%;
+  flex: 0 1 auto;
+  width: 40%;
 }
 
 .main {
   padding: 1rem 2rem;
   height: 100vh;
   overflow: auto;
+  flex: 1 1 auto;
 }
 
 .panel {
