@@ -189,6 +189,9 @@ h3 {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
+aside {
+  padding: 1rem
+}
 .sidebar {
   position: relative;
   background: var(--bg-lighter);
