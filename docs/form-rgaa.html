@@ -211,6 +211,23 @@
         <h1>Formulaire RGAA</h1>
         <p>Voici un exemple de formulaire implémentant les recommandations d'accessibilité.</p>
 
+        <div class="field" role="group" aria-labelledby="civ-title">
+          <h2 class="label" id="civ-title">Civilité</h2>
+
+          <div class="radio-list-inline">
+            <div class="radio">
+              <input type="radio" name="civ" id="civ-mme" checked>
+              <label for="civ-mme">Madame</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="civ" id="civ-m">
+              <label for="civ-m">Monsieur</label>
+            </div>
+
+          </div>
+        </div>
+
         <div class="field">
           <label for="email">Email (obligatoire)</label>
           <p class="inline-help" id="mail-help">Exemple&nbsp;: vous@site.com</p>
@@ -281,23 +298,6 @@
 
           </div>
 
-        </div>
-
-        <div class="field" role="group" aria-labelledby="civ-title">
-          <h2 class="label" id="civ-title">Civilité</h2>
-
-          <div class="radio-list-inline">
-            <div class="radio">
-              <input type="radio" name="civ" id="civ-mme" checked>
-              <label for="civ-mme">Madame</label>
-            </div>
-
-            <div class="radio">
-              <input type="radio" name="civ" id="civ-m">
-              <label for="civ-m">Monsieur</label>
-            </div>
-
-          </div>
         </div>
 
         <div class="field">
