@@ -85,7 +85,7 @@ emailFieldList.forEach((field) => {
 
   field.addEventListener('invalid', (e) => {
     if (field.value === '') {
-      field.setCustomValidity('L\'email est requis.');
+      field.setCustomValidity('L\'email est obligatoire.');
     } else {
       field.setCustomValidity('L\'email est incorrect, le caractère \'@\' est manquant, exemple : vous@site.com');
     }
