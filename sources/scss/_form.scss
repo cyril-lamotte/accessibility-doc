@@ -44,8 +44,8 @@ button[type="submit"] {
   padding: 0.5rem 1rem;
   border: 0;
   border-radius: 0.25rem;
-  background-color: hsl(218deg 92% 57%);
-  color: #fff;
+  background-color: var(--hl);
+  color: var(--bgcolor);
 }
 
 .error {
