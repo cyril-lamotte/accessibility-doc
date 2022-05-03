@@ -1,6 +1,7 @@
 
 // Apply a natural box layout model to all elements (Only IE8+).
 html {
+  font: 1em/1.5 Roboto, Arial, sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -29,13 +30,11 @@ html {
   --error: #5f3127;
 }
 
-html, body {
-  font-size: 20px;
+body {
   line-height: 1.6;
   margin: 0;
   background-color: var(--bgcolor);
   color: var(--base-color);
-  font-family: Roboto, Arial, sans-serif;
 }
 
 :any-link {
