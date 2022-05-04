@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <!-- @@include('includes/head.html', {"title": "Formulaire RGAA - Recherche"}) -->
+
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- @@include('includes/nav.html') -->
+
+    <div class="sidebar">
+      <!-- @@include('includes/hint-form.html') -->
+    </div>
+
+    <main class="main" role="main">
+
+      <form method="get" action="#">
+
+        <h1>Formulaire de recherche</h1>
+        <p>Voici un exemple de formulaire de recherche.</p>
+
+        <div class="hint-note">
+          <p>⚠️ Le formulaire ne comporte qu'un seul champ, la mention du champ obligatoire n'est pas obligatoire.</p>
+        </div>
+
+        <div class="hint-note">
+          <p>⚠️ Ici la balise <code>label</code> est présente mais est masquée de façon accessible avec CSS (placée hors de l'écran).</p>
+          <p>On utilise le <code>placeholder</code>, en complément du <code>title</code>, les 2 doivent être identiques.</p>
+        </div>
+
+        <div class="field">
+          <label for="search" class="visually-hidden">Rechercher sur le site</label>
+          <input type="search" id="search" title="Rechercher sur le site" placeholder="Rechercher sur le site" required>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Rechercher</button>
+        </div>
+
+      </form>
+
+    </main>
+
+  </div>
+
+  <!-- @@include('includes/scripts.html') -->
+
+</body>
+</html>

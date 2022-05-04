@@ -10,3 +10,28 @@
 .ref-link {
   font-size: small;
 }
+
+.summary {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  :any-link {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0 0 0 20px;
+    list-style: disc;
+
+    li::marker {
+      color: #fff;
+    }
+  }
+}

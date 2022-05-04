@@ -78,6 +78,8 @@ h3 {
 
 aside {
   padding: 1rem;
+  border-right: 1px solid var(--bg-lighter);
+  flex: 0 0 240px;
 }
 
 .sidebar {
@@ -89,6 +91,7 @@ aside {
   overflow: auto;
   flex: 0 1 auto;
   width: 40%;
+  border-right: 1px solid var(--bg-lighter);
 }
 
 .main {
@@ -110,4 +113,14 @@ aside {
 
 .is-visible {
   display: block !important;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }

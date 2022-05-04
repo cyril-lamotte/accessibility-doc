@@ -190,7 +190,11 @@ h3 {
   justify-content: space-between
 }
 aside {
-  padding: 1rem
+  padding: 1rem;
+  border-right: 1px solid var(--bg-lighter);
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 240px;
+  flex: 0 0 240px
 }
 .sidebar {
   position: relative;
@@ -202,7 +206,8 @@ aside {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 40%
+  width: 40%;
+  border-right: 1px solid var(--bg-lighter)
 }
 .main {
   padding: 1rem 2rem;
@@ -223,6 +228,15 @@ aside {
 .is-visible {
   display: block!important
 }
+.visually-hidden {
+  position: absolute!important;
+  clip: rect(1px,1px,1px,1px);
+  padding: 0!important;
+  border: 0!important;
+  height: 1px!important;
+  width: 1px!important;
+  overflow: hidden
+}
 .criteria-group {
   margin-bottom: .5rem
 }
@@ -231,6 +245,40 @@ aside {
 }
 .ref-link {
   font-size: small
+}
+.summary {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+.summary :-webkit-any-link {
+  color: #fff;
+  text-decoration: none
+}
+.summary :-moz-any-link {
+  color: #fff;
+  text-decoration: none
+}
+.summary :any-link {
+  color: #fff;
+  text-decoration: none
+}
+.summary :-webkit-any-link:hover {
+  text-decoration: underline
+}
+.summary :-moz-any-link:hover {
+  text-decoration: underline
+}
+.summary :any-link:hover {
+  text-decoration: underline
+}
+.summary ul {
+  padding: 0;
+  margin: 0 0 0 20px;
+  list-style: disc
+}
+.summary ul li::marker {
+  color: #fff
 }
 .field {
   margin-bottom: 1rem
@@ -246,6 +294,7 @@ label {
 }
 input[type=email],
 input[type=password],
+input[type=search],
 input[type=text],
 select {
   display: block;
@@ -363,6 +412,15 @@ code {
   padding: 10px 10px 10px 20px;
   background: var(--bgcolor);
   border-radius: 0 10px 10px 0
+}
+.hint-note :first-child {
+  margin-top: 0
+}
+.hint-note :last-child {
+  margin-bottom: 0
+}
+.hint-note code {
+  background-color: var(--bg-lighter)
 }
 .outline {
   outline: 2px dashed var(--hl);
